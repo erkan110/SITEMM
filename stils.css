@@ -1,0 +1,296 @@
+* {
+    box-sizing: border-box;
+}
+body
+{
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #F0F6FF;
+}
+.menu
+{
+    width: 100%;
+    height: 70px;
+    background-color:#0052cd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    font-weight: bold;
+}
+.menu img
+{
+    height: 50px;
+}
+.menulink a
+{
+    color: #F0F6FF;
+    text-decoration: none;
+    font-size: 23px;
+    margin: 0px 20px;
+}
+.menulink a:hover
+{
+    color: #FACC15;
+    text-shadow: 0 0 20px #ddff00;
+}
+.tablo 
+{
+    width: 100%;
+    text-align: center;
+    margin:40px auto; 
+}
+.tablo h1
+{
+    text-align: center;
+    font-size: 50px;
+    font-weight: bolder;
+}
+.kartlar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:auto;
+}
+
+.sol, .sag
+{
+    width:31%;
+	height:400px;
+	background-color:#0052cd; 
+	border: 3px solid #0059ff;
+	margin:10px; 
+    border-radius: 20px;
+    position: relative;
+    top: 30px;
+    transition: 1s;
+    transform-style: preserve-3d;
+}
+.orta
+{
+    width:31%;
+	height:400px;
+	background-color:#0052cd; 
+	border: 3px solid #0059ff;
+	margin:10px; 
+    border-radius: 20px;
+    transition: 1s;
+    transform-style: preserve-3d;
+}
+.sol:hover,.orta:hover,.sag:hover
+{
+    background-color:#FACC15; 
+	border: 3px solid #ddff00;
+    transition: 1s;
+    transform: translateY(-10px) rotateX(5deg) rotateY(5deg) scale(1.02);
+}
+hr
+{
+    width: 90%;
+    background-color: #000000;
+    height: 4px;
+    box-shadow: 0 0 15px black;
+    border: 0;
+    border-radius: 5px;
+}
+.ekle
+{
+    width: 100%;
+    background-color: #0052cd;
+    box-shadow: 0 5px 15px black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: 0.8s;
+}
+.ekle p
+{
+    font-size: 23px;
+    color: #F0F6FF;
+    text-align: center;
+    padding: 30px;
+    font-weight: bold;
+    margin: 40px 20px 0px 20px;
+    line-height: 35px;
+    text-shadow: 0 0 15px black;
+    transition: 0.5s;
+}
+.ekle button
+{
+    text-align: center;
+    width: 300px;
+    height: 80px;
+    background-color: #F0F6FF;
+    color: #000000;
+    border:0;
+    margin: 10px 20px 40px 20px;
+    padding: 30px;
+    font-size: 27px;
+    font-weight: bold;
+    border-radius: 20px;
+    box-shadow: 0 0 15px black;
+    text-shadow: 0 0 15px #F0F6FF;
+    transition: 1s;
+}
+.ekle button:hover
+{
+    background-color: #FACC15;
+    color: #F0F6FF;
+    box-shadow: 0 0 15px black;
+    text-shadow: 0 0 15px #F0F6FF;
+    transition: 1s;
+}
+.arada
+{
+    width: 100%;
+    background-color: #000000;
+    box-shadow: 0 5px 15px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+}
+.arada h2
+{
+    font-size: 33px;
+    color: #FACC15;
+    text-align: center;
+    padding: 30px;
+    font-weight: bold;
+    margin: 40px 30px;
+    line-height: 55px;
+    text-shadow: 0 0 15px #b8d20c;
+}
+.arada:hover
+{
+    background-color: #FACC15;
+    box-shadow: 0 5px 15px black;
+    text-shadow: 0 0 15px #F0F6FF;
+    transition: 1.5s;
+    transition: 0.5s;
+}
+.arada:hover h2
+{
+    font-size: 33px;
+    color: #F0F6FF;
+    text-align: center;
+    padding: 30px;
+    font-weight: bold;
+    margin: 40px 30px;
+    line-height: 55px;
+    text-shadow: 0 0 15px black;
+    transition: 0.6s;
+}
+.login
+{
+    width: 100%;
+    background-color: #0052cd;
+    box-shadow: 0 5px 15px black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.login p
+{
+    font-size: 23px;
+    color: #F0F6FF;
+    text-align: center;
+    padding: 30px;
+    font-weight: bold;
+    margin: 40px 20px 0px 20px;
+    line-height: 35px;
+    text-shadow: 0 0 15px black;
+}
+.loginbuttonlar
+{
+    display: flex;
+    flex-direction: column;
+    margin: 20px 80px 20px 20px;
+}
+#kayit
+{
+    text-align: center;
+    width: 300px;
+    height: 80px;
+    background-color: #000000;
+    color: #F0F6FF;
+    border:0;
+    margin-top: 0px;
+    padding: 30px;
+    font-size: 27px;
+    font-weight: bold;
+    border-radius: 20px;
+    box-shadow: 0 0 15px black;
+}
+#kayit:hover
+{
+    background-color: #FACC15;
+    color: #F0F6FF;
+    box-shadow: 0 0 15px black;
+    text-shadow: 0 0 15px #F0F6FF;
+}
+
+#giris
+{
+    text-align: center;
+    width: 300px;
+    height: 80px;
+    background-color: #F0F6FF;
+    color: #000000;
+    border:0;
+    margin-top: 40px;
+    padding: 30px;
+    font-size: 27px;
+    font-weight: bold;
+    border-radius: 20px;
+    box-shadow: 0 0 15px black;
+    text-shadow: 0 0 15px #F0F6FF;
+}
+#giris:hover
+{
+    background-color: #FACC15;
+    color: #F0F6FF;
+    box-shadow: 0 0 15px black;
+    text-shadow: 0 0 15px #F0F6FF;
+}
+
+
+/* 
+
+
+
+   BURADAN SONRASI yaziAlani html'nin KISMIDIR!!!
+   BURADAN SONRASI yaziAlani html'nin KISMIDIR!!!
+   BURADAN SONRASI yaziAlani html'nin KISMIDIR!!!
+
+
+   adamsın erkan 
+*/
+
+.hikayeYazisi
+{
+    width: 100%;
+    height: 970px;
+    background-color: rgb(18, 51, 79);
+    display: flex;            
+    justify-content: center;  
+    align-items: center;
+}
+
+.hikayeArea
+{
+    width: 70%;
+    height: 900px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    font-size: 25px;
+    padding: 10px;
+    box-sizing: border-box;
+    vertical-align: top;
+    line-height: 1.5;
+    box-shadow: 5px 5px 2px black;
+}
