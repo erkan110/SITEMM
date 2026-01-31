@@ -293,4 +293,33 @@ hr
     vertical-align: top;
     line-height: 1.5;
     box-shadow: 5px 5px 2px black;
+    resize: none;
+}
+.kacaklogin
+{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.kayitolma,.girisyapma
+{
+    background-color: #004aba;
+    color: black;
+    padding: 20px;
+    margin: 20px;
+    width: 50%;
+    height: 400px;
+}
+.formgiris
+{
+    text-align: center;
+    color: #000000;
+    margin: 20px;
+    font-size: 40px;
+}
+.form input
+{
+    border: 0;
+    background-color: #F0F6FF;
 }
