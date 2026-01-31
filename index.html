@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="icon" href="FOTOLAR/icon.png" type="image/x-icon">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -35,7 +36,7 @@
         <p>Konuyu oku, kendi devamını yaz ve hikâyeni yayınla. Hayal gücünü kullanarak hikâyeye farklı bir yön ver, kelimelerinle iz bırak. 
         Diğer kullanıcıların yazdığı hikâyeleri keşfet, beğendiğin yazılara destek ol ve kendi hikâyenle beğeni topla. Haftalık ve aylık 
         sıralamalarda öne çıkarak haftanın en iyi hikâyeleri arasına girme şansını yakala.</p>
-        <button id="ekle"><a href="yaziAlani.html">OLUŞTUR</a></button>
+        <a href="yaziAlani.html"><button id="ekle">OLUŞTUR</button></a>
     </div>
     <hr>
     <div class="arada">
@@ -54,23 +55,48 @@
     <hr>
     <div class="kacaklogin">
     <div class="kayitolma">
-        <form action="" class="form" id="form1">
-            <h2 class="formgiris">KAYIT OL</h2>
+    <form action="" class="form" id="form1">
+    <h2 class="formgiris">KAYIT OL</h2>
+    <div class="selam">
+        <div class="ikon">
+            <i class="fa-solid fa-user"></i>
+        </div>
+        <input type="text" placeholder="Kullanıcı Adınız..." class="kayitt" required>
+    </div>
+    <div class="selam">
+        <div class="ikon">
+            <i class="fa-solid fa-lock"></i>
+        </div>
+        <input type="password" placeholder="Şifreniz..." class="kayitt" required>
+    </div>
+    <div class="selam">
+        <div class="ikon">
+            <i class="fa-solid fa-envelope"></i>
+        </div>
+        <input type="email" placeholder="E-Mail Adresiniz..." class="kayitt" required>
+    </div>
+    <button id="kayitt">KAYIT OL</button>
+</form>
+    </div>
+<div class="girisyapma">
+    <form action="" class="form" id="form2">
+        <h2 class="formgiris">GİRİŞ YAP</h2>
+        <div class="selam">
+            <div class="ikon">
+                <i class="fa-solid fa-user"></i>
+            </div>
             <input type="text" placeholder="Kullanıcı Adınız..." class="kayitt" required>
+        </div>
+        <div class="selam">
+            <div class="ikon">
+                <i class="fa-solid fa-lock"></i>
+            </div>
             <input type="password" placeholder="Şifreniz..." class="kayitt" required>
-            <input type="email" placeholder="E-Mail Adresiniz..." class="kayitt" required>
-            <button id="kayitt">KAYIT OL</button>
-        </form>
-    </div>
-     <div class="girisyapma">
-        <form action="" class="form" id="form2">
-            <h2 class="formgiris">GİRİŞ YAP</h2>
-            <input type="text" placeholder="Kullanıcı Adınız..." class="kayitt" required>
-            <input type="password" placeholder="Şifreniz..." class="kayitt" required>
-            <button id="giriss">GİRİŞ YAP</button>
-        </form>
-    </div>
-    </div>
+        </div>
+        <button id="giriss">GİRİŞ YAP</button>
+    </form>
+</div>
+</div>
 <script src="proje.js"></script>
 </body>
 </html>
